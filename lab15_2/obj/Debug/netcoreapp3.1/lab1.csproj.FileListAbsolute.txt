@@ -1,0 +1,65 @@
+/home/erambler/Projects/Labs/C#/lab1/obj/Debug/netcoreapp3.1/lab1.csprojAssemblyReference.cache
+/home/erambler/Projects/Labs/C#/lab1/obj/Debug/netcoreapp3.1/lab1.AssemblyInfoInputs.cache
+/home/erambler/Projects/Labs/C#/lab1/obj/Debug/netcoreapp3.1/lab1.AssemblyInfo.cs
+/home/erambler/Projects/Labs/C#/lab1/obj/Debug/netcoreapp3.1/lab1.csproj.CoreCompileInputs.cache
+/home/erambler/Projects/Labs/C#/lab1/bin/Debug/netcoreapp3.1/lab1
+/home/erambler/Projects/Labs/C#/lab1/bin/Debug/netcoreapp3.1/lab1.deps.json
+/home/erambler/Projects/Labs/C#/lab1/bin/Debug/netcoreapp3.1/lab1.runtimeconfig.json
+/home/erambler/Projects/Labs/C#/lab1/bin/Debug/netcoreapp3.1/lab1.runtimeconfig.dev.json
+/home/erambler/Projects/Labs/C#/lab1/bin/Debug/netcoreapp3.1/lab1.dll
+/home/erambler/Projects/Labs/C#/lab1/bin/Debug/netcoreapp3.1/lab1.pdb
+/home/erambler/Projects/Labs/C#/lab1/obj/Debug/netcoreapp3.1/lab1.dll
+/home/erambler/Projects/Labs/C#/lab1/obj/Debug/netcoreapp3.1/lab1.pdb
+/home/erambler/Projects/Labs/C#/lab1/obj/Debug/netcoreapp3.1/lab1.genruntimeconfig.cache
+/home/erambler/Projects/Labs/C#/lab1_14/bin/Debug/netcoreapp3.1/lab1
+/home/erambler/Projects/Labs/C#/lab1_14/bin/Debug/netcoreapp3.1/lab1.deps.json
+/home/erambler/Projects/Labs/C#/lab1_14/bin/Debug/netcoreapp3.1/lab1.runtimeconfig.json
+/home/erambler/Projects/Labs/C#/lab1_14/bin/Debug/netcoreapp3.1/lab1.runtimeconfig.dev.json
+/home/erambler/Projects/Labs/C#/lab1_14/bin/Debug/netcoreapp3.1/lab1.dll
+/home/erambler/Projects/Labs/C#/lab1_14/bin/Debug/netcoreapp3.1/lab1.pdb
+/home/erambler/Projects/Labs/C#/lab1_14/obj/Debug/netcoreapp3.1/lab1.csprojAssemblyReference.cache
+/home/erambler/Projects/Labs/C#/lab1_14/obj/Debug/netcoreapp3.1/lab1.AssemblyInfoInputs.cache
+/home/erambler/Projects/Labs/C#/lab1_14/obj/Debug/netcoreapp3.1/lab1.AssemblyInfo.cs
+/home/erambler/Projects/Labs/C#/lab1_14/obj/Debug/netcoreapp3.1/lab1.csproj.CoreCompileInputs.cache
+/home/erambler/Projects/Labs/C#/lab1_14/obj/Debug/netcoreapp3.1/lab1.dll
+/home/erambler/Projects/Labs/C#/lab1_14/obj/Debug/netcoreapp3.1/lab1.pdb
+/home/erambler/Projects/Labs/C#/lab1_14/obj/Debug/netcoreapp3.1/lab1.genruntimeconfig.cache
+/home/erambler/Projects/Labs/C#/lab2_14/bin/Debug/netcoreapp3.1/lab1
+/home/erambler/Projects/Labs/C#/lab2_14/bin/Debug/netcoreapp3.1/lab1.deps.json
+/home/erambler/Projects/Labs/C#/lab2_14/bin/Debug/netcoreapp3.1/lab1.runtimeconfig.json
+/home/erambler/Projects/Labs/C#/lab2_14/bin/Debug/netcoreapp3.1/lab1.runtimeconfig.dev.json
+/home/erambler/Projects/Labs/C#/lab2_14/bin/Debug/netcoreapp3.1/lab1.dll
+/home/erambler/Projects/Labs/C#/lab2_14/bin/Debug/netcoreapp3.1/lab1.pdb
+/home/erambler/Projects/Labs/C#/lab2_14/obj/Debug/netcoreapp3.1/lab1.csprojAssemblyReference.cache
+/home/erambler/Projects/Labs/C#/lab2_14/obj/Debug/netcoreapp3.1/lab1.AssemblyInfoInputs.cache
+/home/erambler/Projects/Labs/C#/lab2_14/obj/Debug/netcoreapp3.1/lab1.AssemblyInfo.cs
+/home/erambler/Projects/Labs/C#/lab2_14/obj/Debug/netcoreapp3.1/lab1.csproj.CoreCompileInputs.cache
+/home/erambler/Projects/Labs/C#/lab2_14/obj/Debug/netcoreapp3.1/lab1.dll
+/home/erambler/Projects/Labs/C#/lab2_14/obj/Debug/netcoreapp3.1/lab1.pdb
+/home/erambler/Projects/Labs/C#/lab2_14/obj/Debug/netcoreapp3.1/lab1.genruntimeconfig.cache
+/home/erambler/Projects/Labs/C#/lab14_2/bin/Debug/netcoreapp3.1/lab1
+/home/erambler/Projects/Labs/C#/lab14_2/bin/Debug/netcoreapp3.1/lab1.deps.json
+/home/erambler/Projects/Labs/C#/lab14_2/bin/Debug/netcoreapp3.1/lab1.runtimeconfig.json
+/home/erambler/Projects/Labs/C#/lab14_2/bin/Debug/netcoreapp3.1/lab1.runtimeconfig.dev.json
+/home/erambler/Projects/Labs/C#/lab14_2/bin/Debug/netcoreapp3.1/lab1.dll
+/home/erambler/Projects/Labs/C#/lab14_2/bin/Debug/netcoreapp3.1/lab1.pdb
+/home/erambler/Projects/Labs/C#/lab14_2/obj/Debug/netcoreapp3.1/lab1.csprojAssemblyReference.cache
+/home/erambler/Projects/Labs/C#/lab14_2/obj/Debug/netcoreapp3.1/lab1.AssemblyInfoInputs.cache
+/home/erambler/Projects/Labs/C#/lab14_2/obj/Debug/netcoreapp3.1/lab1.AssemblyInfo.cs
+/home/erambler/Projects/Labs/C#/lab14_2/obj/Debug/netcoreapp3.1/lab1.csproj.CoreCompileInputs.cache
+/home/erambler/Projects/Labs/C#/lab14_2/obj/Debug/netcoreapp3.1/lab1.dll
+/home/erambler/Projects/Labs/C#/lab14_2/obj/Debug/netcoreapp3.1/lab1.pdb
+/home/erambler/Projects/Labs/C#/lab14_2/obj/Debug/netcoreapp3.1/lab1.genruntimeconfig.cache
+/home/erambler/Projects/Labs/C#/lab15_2 --/obj/Debug/netcoreapp3.1/lab1.csprojAssemblyReference.cache
+/home/erambler/Projects/Labs/C#/lab15_2 --/obj/Debug/netcoreapp3.1/lab1.AssemblyInfoInputs.cache
+/home/erambler/Projects/Labs/C#/lab15_2 --/obj/Debug/netcoreapp3.1/lab1.AssemblyInfo.cs
+/home/erambler/Projects/Labs/C#/lab15_2 --/obj/Debug/netcoreapp3.1/lab1.csproj.CoreCompileInputs.cache
+/home/erambler/Projects/Labs/C#/lab15_2 --/obj/Debug/netcoreapp3.1/lab1.dll
+/home/erambler/Projects/Labs/C#/lab15_2 --/obj/Debug/netcoreapp3.1/lab1.pdb
+/home/erambler/Projects/Labs/C#/lab15_2 --/bin/Debug/netcoreapp3.1/lab1
+/home/erambler/Projects/Labs/C#/lab15_2 --/bin/Debug/netcoreapp3.1/lab1.deps.json
+/home/erambler/Projects/Labs/C#/lab15_2 --/bin/Debug/netcoreapp3.1/lab1.runtimeconfig.json
+/home/erambler/Projects/Labs/C#/lab15_2 --/bin/Debug/netcoreapp3.1/lab1.runtimeconfig.dev.json
+/home/erambler/Projects/Labs/C#/lab15_2 --/bin/Debug/netcoreapp3.1/lab1.dll
+/home/erambler/Projects/Labs/C#/lab15_2 --/bin/Debug/netcoreapp3.1/lab1.pdb
+/home/erambler/Projects/Labs/C#/lab15_2 --/obj/Debug/netcoreapp3.1/lab1.genruntimeconfig.cache

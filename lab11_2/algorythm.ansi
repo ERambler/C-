@@ -1,0 +1,15 @@
+float a,b,s,f; //[a,b] s - шаг
+Console.WriteLine("¬ведите нижнюю и верхнюю границы отрезка: ");
+a = Convert.ToSingle(Console.ReadLine());
+b = Convert.ToSingle(Console.ReadLine());
+Console.Write("Ўаг: ");
+s = Convert.ToSingle(Console.ReadLine());
+Console.WriteLine("    x    f(x)");
+for (float i=a;i<=b;i+=s)
+{
+if (Math.Abs(i)<2) 
+f=Convert.ToSingle(Math.Pow(1/Math.Tan(4*i),2));
+else 
+f=Convert.ToSingle(Math.Exp(2*i));
+Console.WriteLine("{0,4}    {1,10}",i,f);
+
