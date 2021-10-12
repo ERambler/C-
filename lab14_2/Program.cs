@@ -35,7 +35,7 @@ namespace lab
                 if (Math.Abs(i) < 3) f = Math.Pow( Math.Cos(2*i), 2) + 7 * Math.Pow( Math.Tan(i),4 );
                 else f = Math.Sqrt( Math.Abs ( 1/Math.Tan(3*i)-5 ) );
             Console.WriteLine("{0}\t\t{1}",i,f);}
-            
+            Console.ReadKey();
         }
     }
 }

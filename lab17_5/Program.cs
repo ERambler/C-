@@ -22,6 +22,7 @@ namespace l
             Console.WriteLine(F);// Показываем на экран
             ChangeSort (F);//Запускаем сортировку
             Console.WriteLine(F);//Показываем на экран
+            Console.ReadKey();
         }
 
     static void ChangeSort (char [] A)

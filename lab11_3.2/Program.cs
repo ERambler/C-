@@ -15,7 +15,6 @@ namespace Bisection
         static void Main()         
         {   const float e = 0.0001f; 
             float x0, x1, x2 = 0, fx0, fx2;
-
             Console.WriteLine ("Введите начало и конец числового промежутка");
             x0 = Convert.ToSingle(Console.ReadLine());
             x1 = Convert.ToSingle(Console.ReadLine()); 
@@ -27,7 +26,8 @@ namespace Bisection
                 if (fx0 * fx2 < 0) x1 = x2; 
                 else x0 = x2;            
             } 
-        Console.WriteLine("Значение корня уравнения на заданном числовом промежутке = {0}", x2); Console.Read();
+        Console.WriteLine("Значение корня уравнения на заданном числовом промежутке = {0}", x2); 
+        Console.Read();
         }
     }
 } 

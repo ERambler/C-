@@ -31,6 +31,7 @@ namespace ThirdArray
                 }
             }
             Show(A);
+            Console.ReadKey();
         }
     }
 }

@@ -32,6 +32,7 @@ namespace lab5
             Console.WriteLine(M);
             ChangeSort (M);
             Console.WriteLine(M);
+            Console.ReadKey();
         }
     }
 }

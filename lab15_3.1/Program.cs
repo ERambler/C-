@@ -35,6 +35,7 @@ namespace lab3_1
                 } 
             while (Math.Abs(sum-sum2) > e);
             Console.WriteLine("\nСумма ряда -> {0}\t при количестве членов ряда = {1}",sum,n);
+            Console.ReadKey();
         }
     }
 }

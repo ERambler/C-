@@ -17,7 +17,7 @@ namespace lab3_1
             Console.WriteLine("заданный ряд: ――― - ――― + ――― - ――― ...");
             Console.WriteLine("               1!    2!    4!    7!");    
 
-            const float e = 0.000000000000000000000000000000000000001f; 
+            const float e = 0.0000000001f; 
             int i=0, l; 
             double  nFact=1,//факториал
                     n=1,    //факториала

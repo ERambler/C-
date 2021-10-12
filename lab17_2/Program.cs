@@ -27,6 +27,7 @@ namespace lab
                 else f=Convert.ToSingle(Math.Tan(2*i)+1);
                 Console.WriteLine("X={0,6}|   F(X)={1}",i,f);
             }
+            Console.ReadKey();
         }
     }
 }

@@ -49,6 +49,7 @@ namespace ArrayBubble
             while (j <= high) tmp[tmpPos++] = A[j++];
             while (i <= center) tmp[tmpPos++] = A[i++];
             for (tmpPos = 0; tmpPos < tmp.Length; tmpPos++) A[low + tmpPos] = tmp[tmpPos];
+            Console.ReadKey();
         }   
     }
 }

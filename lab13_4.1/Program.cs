@@ -21,7 +21,7 @@ namespace ArrayFinding
                 }
             }
             Console.WriteLine("\nКоличество элементов массива между {0} и {1} : {2}",p,q,count);
-            
+            Console.ReadKey();
             // Есть такой метод в Array: int[] matchedItems = Array.FindAll(M, x => x >= p && x < q);
             // https://docs.microsoft.com/ru-ru/dotnet/api/system.array.findall?view=netcore-3.1
             // Однако согласно контексту, вероятнее всего нужно выполнить поиск руками.

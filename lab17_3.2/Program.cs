@@ -6,7 +6,7 @@
 уравнение: 2sin(3x)-1.5x
 */
 using System;
-namespace Secant
+namespace Chord
 {
     class Program
     {

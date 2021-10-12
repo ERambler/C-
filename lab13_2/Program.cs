@@ -20,11 +20,11 @@ namespace KR2
         {   
             double a, b, p, fx=0; //переменные отрезка, шага и значения функции
             Console.Write("Нижняя граница: ");
-            a = Convert.ToDouble(Console.ReadLine());
+              a = Convert.ToDouble(Console.ReadLine());
             Console.Write("Верхняя граница: ");
-            b = Convert.ToDouble(Console.ReadLine());
+              b = Convert.ToDouble(Console.ReadLine());
             Console.Write("Шаг: ");
-            p = Convert.ToDouble(Console.ReadLine());
+              p = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("    x\tf(x)");
             for (double x = a; x <= b; x += p)
             {
@@ -35,6 +35,7 @@ namespace KR2
                 else if (x>0)
                   fx=Math.Abs(8-Math.Pow(x,3)-10*x);
                 Console.WriteLine("{0}\t{1}",x,fx);
+                Console.ReadKey();
             }
         }
     }

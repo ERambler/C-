@@ -40,6 +40,7 @@ namespace lab4_2
                 if (max) {Console.WriteLine("А[{0},{1}]={2}",i,idx_j,A[i,idx_j]); virginity=false;}
             }
             if (virginity) Console.WriteLine("0");
+            Console.ReadKey();
         }
     }
 }

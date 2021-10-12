@@ -27,6 +27,7 @@ namespace LocalMinimum
                     }
             }
             Console.WriteLine("\nПервый локальный минимум с индексом {0}",idx);
+            Console.ReadKey();
         }
     }
 }

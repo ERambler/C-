@@ -13,10 +13,6 @@ namespace lab3_1
     {
         static void Main()
         {   
-            Console.WriteLine("              (5x-1)");
-            Console.WriteLine("заданный ряд: ――――――");
-            Console.WriteLine("              (1-n!)");    
-
             const float e = 0.00000001f; 
             const float x = 1f;
             double  F=2,    //факториал
@@ -30,11 +26,11 @@ namespace lab3_1
                     sum += c;
                     n++;
                     F*=n;
-
                     Console.WriteLine("{0}\tsum={1}",c,sum);
                 } 
             while (Math.Abs(sum-sum2) > e);
             Console.WriteLine("\nСумма ряда -> {0}\t при количестве членов ряда = {1}",sum,n);
+            Console.ReadKey();
         }
     }
 }
