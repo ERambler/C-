@@ -13,14 +13,10 @@ namespace lab3_1
     {
         static void Main()
         {   
-            Console.WriteLine("               (tg x+1)");
-            Console.WriteLine("заданный ряд: ――――――――――");
-            Console.WriteLine("                  2n!");    
-
-            const float e = 0.00000000000001f; 
+            const float e = 0.000001f; 
             const float x = 0.10f;
             double  F=1,    //факториал
-                    n=1,    //верх факториала
+                    n=1,    //итератор
                     c,      //член ряда
                     sum=0,  //сумма
                     sum2;   //сумма предыдущ

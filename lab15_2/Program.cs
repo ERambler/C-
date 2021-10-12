@@ -14,15 +14,18 @@ namespace IfFor
     {
         static void Main(string[] args)
         {   
-            Double a,b,p,fuction;
-            Console.Write("[a: ");       a = Convert.ToDouble(Console.ReadLine());
-            Console.Write("b]: ");       b = Convert.ToDouble(Console.ReadLine());
-            Console.Write("step: ");     p = Convert.ToDouble(Console.ReadLine());
+            Double a,b,p,function;
+            Console.Write("[a: "); 
+            a = Convert.ToDouble(Console.ReadLine());
+            Console.Write("b]: ");       
+            b = Convert.ToDouble(Console.ReadLine());
+            Console.Write("step: ");     
+            p = Convert.ToDouble(Console.ReadLine());
             for (Double x=a;x<=b;x+=p)
             {
-                if (Math.Abs(x)<2) fuction=3*Math.Pow(Math.Cos(5*x),5);
-                else fuction=Math.Exp(5*x);
-                Console.WriteLine("f({0})         {1}",x,fuction);
+                if (Math.Abs(x)<2) function=3*Math.Pow(Math.Cos(5*x),5);
+                else function=Math.Exp(5*x);
+                Console.WriteLine("f({0})         {1}",x,function);
                 Console.ReadKey();
             }
         }

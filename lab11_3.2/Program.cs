@@ -11,7 +11,6 @@ namespace Bisection
 { 
     class Program    
     { 
-        static float fEquation  (double x) {return Convert.ToSingle(Math.Log(x) - 7/(2*x+6));}
         static void Main()         
         {   const float e = 0.0001f; 
             float x0, x1, x2 = 0, fx0, fx2;
@@ -21,8 +20,8 @@ namespace Bisection
             while (Math.Abs(x1 - x0) > e) 
             {
                 x2 = (x0 + x1) / 2;
-                fx0 = fEquation(x0);
-                fx2 = fEquation(x2); 
+                fx0 = Convert.ToSingle(Math.Log(x0) - 7/(2*x0+6));
+                fx2 = Convert.ToSingle(Math.Log(x2) - 7/(2*x2+6)); 
                 if (fx0 * fx2 < 0) x1 = x2; 
                 else x0 = x2;            
             } 
