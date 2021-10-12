@@ -26,8 +26,9 @@ namespace IfFor
                 if (Math.Abs(x)<2) function=3*Math.Pow(Math.Cos(5*x),5);
                 else function=Math.Exp(5*x);
                 Console.WriteLine("f({0})         {1}",x,function);
-                Console.ReadKey();
+                
             }
+            Console.ReadKey();
         }
     }
 }

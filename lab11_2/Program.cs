@@ -25,8 +25,9 @@ namespace ifelse
                 if (Math.Abs(i)<2) f=Convert.ToSingle(Math.Pow(1/Math.Tan(4*i),2));
                 else f=Convert.ToSingle(Math.Exp(2*i));
                 Console.WriteLine("{0,4}    {1,10}",i,f);
-                Console.ReadKey();
+                
             }
+            Console.ReadKey();
         }
     }
 }

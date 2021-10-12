@@ -35,8 +35,9 @@ namespace KR2
                 else if (x>0)
                   fx=Math.Abs(8-Math.Pow(x,3)-10*x);
                 Console.WriteLine("{0}\t{1}",x,fx);
-                Console.ReadKey();
+                
             }
+            Console.ReadKey();
         }
     }
 }
