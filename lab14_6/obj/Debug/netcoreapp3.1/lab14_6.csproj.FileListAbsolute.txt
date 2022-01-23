@@ -11,3 +11,16 @@
 /home/erambler/Projects/Labs/C#/2-ой семестр/lab14_6/obj/Debug/netcoreapp3.1/lab14_6.dll
 /home/erambler/Projects/Labs/C#/2-ой семестр/lab14_6/obj/Debug/netcoreapp3.1/lab14_6.pdb
 /home/erambler/Projects/Labs/C#/2-ой семестр/lab14_6/obj/Debug/netcoreapp3.1/lab14_6.genruntimeconfig.cache
+/home/erambler/Projects/Labs/C#/lab14_6/bin/Debug/netcoreapp3.1/lab14_6
+/home/erambler/Projects/Labs/C#/lab14_6/bin/Debug/netcoreapp3.1/lab14_6.deps.json
+/home/erambler/Projects/Labs/C#/lab14_6/bin/Debug/netcoreapp3.1/lab14_6.runtimeconfig.json
+/home/erambler/Projects/Labs/C#/lab14_6/bin/Debug/netcoreapp3.1/lab14_6.runtimeconfig.dev.json
+/home/erambler/Projects/Labs/C#/lab14_6/bin/Debug/netcoreapp3.1/lab14_6.dll
+/home/erambler/Projects/Labs/C#/lab14_6/bin/Debug/netcoreapp3.1/lab14_6.pdb
+/home/erambler/Projects/Labs/C#/lab14_6/obj/Debug/netcoreapp3.1/lab14_6.csprojAssemblyReference.cache
+/home/erambler/Projects/Labs/C#/lab14_6/obj/Debug/netcoreapp3.1/lab14_6.AssemblyInfoInputs.cache
+/home/erambler/Projects/Labs/C#/lab14_6/obj/Debug/netcoreapp3.1/lab14_6.AssemblyInfo.cs
+/home/erambler/Projects/Labs/C#/lab14_6/obj/Debug/netcoreapp3.1/lab14_6.csproj.CoreCompileInputs.cache
+/home/erambler/Projects/Labs/C#/lab14_6/obj/Debug/netcoreapp3.1/lab14_6.dll
+/home/erambler/Projects/Labs/C#/lab14_6/obj/Debug/netcoreapp3.1/lab14_6.pdb
+/home/erambler/Projects/Labs/C#/lab14_6/obj/Debug/netcoreapp3.1/lab14_6.genruntimeconfig.cache

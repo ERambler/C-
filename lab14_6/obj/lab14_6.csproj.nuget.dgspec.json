@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/erambler/Projects/Labs/C#/2-ой семестр/lab14_6/lab14_6.csproj": {}
+    "/home/erambler/Projects/Labs/C#/lab14_6/lab14_6.csproj": {}
   },
   "projects": {
-    "/home/erambler/Projects/Labs/C#/2-ой семестр/lab14_6/lab14_6.csproj": {
+    "/home/erambler/Projects/Labs/C#/lab14_6/lab14_6.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/erambler/Projects/Labs/C#/2-ой семестр/lab14_6/lab14_6.csproj",
+        "projectUniqueName": "/home/erambler/Projects/Labs/C#/lab14_6/lab14_6.csproj",
         "projectName": "lab14_6",
-        "projectPath": "/home/erambler/Projects/Labs/C#/2-ой семестр/lab14_6/lab14_6.csproj",
+        "projectPath": "/home/erambler/Projects/Labs/C#/lab14_6/lab14_6.csproj",
         "packagesPath": "/home/erambler/.nuget/packages/",
-        "outputPath": "/home/erambler/Projects/Labs/C#/2-ой семестр/lab14_6/obj/",
+        "outputPath": "/home/erambler/Projects/Labs/C#/lab14_6/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/erambler/.nuget/NuGet/NuGet.Config"
