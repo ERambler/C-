@@ -16,7 +16,7 @@ namespace lab14_6
     {
         static int[] ParseDate (string date, string dateFormat)
         {   /*Метод парсинга даты по шаблону.*/
-            string d="0",m="0",y="0"; 
+            string d="",m="",y=""; 
             for (int i=0; i<dateFormat.Length;i++)
             {
                switch (dateFormat[i]) 
