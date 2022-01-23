@@ -1,9 +1,8 @@
 ﻿/*
 Выполнил Журавлёв Е. А. З-21-ИСТ-итпк-Б
 Задача 14
-Создать метод, который сравнивает две даты, переданные в стро-
-ковой  переменной,  и  результат  сравнения  выдает  в  имени  функ-
-ции.
+Создать метод, который сравнивает две даты, переданные в строковой  переменной,  
+и  результат  сравнения  выдает  в  имени  функции.
 Дополнительная задача: 
 ввод формата пользователем
 DateTime не использовать
@@ -15,8 +14,8 @@ namespace lab14_6
     {
         static int[] ParseDate (string date, string dateFormat)
         {   /*Метод парсинга даты по шаблону.*/
-            string d="",m="",y=""; 
-            for (int i=0; i<dateFormat.Length;i++)
+            string d="",m="",y="";
+            for (int i=0; i<Math.Min(dateFormat.Length,date.Length);i++)
             {
                switch (dateFormat[i]) 
                {
@@ -25,9 +24,9 @@ namespace lab14_6
                    case 'y': y=y.Insert(y.Length,date[i].ToString());break;
                }
             }
-            int[] ret={int.Parse(d),int.Parse(m),int.Parse(y)};
+            int[] ret={int.Parse(d.Trim()),int.Parse(m.Trim()),int.Parse(y.Trim())};
             if (!IsCorrectDate(ret)) 
-                {Console.Write("\n{0}-{1}-{2} - это некорректная дата. Заменяю на 0.",d,m,y);
+                {Console.Write("\n{0}-{1}-{2} - это некорректная дата. Заменяю на 0. \nРезультат НЕКОРРЕКТЕН!\n",d,m,y);
                 ret[0]=0;ret[1]=0;ret[2]=0;}
             return ret;
         }
@@ -63,14 +62,15 @@ namespace lab14_6
         static void Main(string[] args)
         {   //Берём формат даты от пользователя
             Console.Write("Введи формат даты, например dd.mm.yy:"); string dateFormat = Console.ReadLine();
+            if (dateFormat.Length==0) {dateFormat="dd.mm.yyyy";Console.WriteLine("Использую формат dd.mm.yyyy");}
             //Берём две даты от пользователя
             Console.Write("Введи первую дату:");  string dateFirst = Console.ReadLine();
             Console.Write("Введи вторую дату:");  string dateSecond = Console.ReadLine();
+            //Вызываем метод сравнения дат. Метод даст отрицательное количество дней, если вторая дата меньше первой
             long countOfDays = ComparingDates(dateFirst,dateSecond,dateFormat);
-            Console.WriteLine("{0}",countOfDays);
-            if (countOfDays>0) Console.WriteLine("{1} > {0}",dateFirst,dateSecond);
-            else if (countOfDays<0) Console.WriteLine("{0} > {1}",dateFirst,dateSecond);
-            else if (countOfDays==0) Console.WriteLine("{1} = {0}",dateFirst,dateSecond);
+            if (countOfDays>0) Console.WriteLine("Событие {1} произошло позднее {0} на {2} дней.",dateFirst,dateSecond,Math.Abs(countOfDays));
+            else if (countOfDays<0) Console.WriteLine("Событие {1} произошло раньше {0} на {2} дней.",dateFirst,dateSecond,Math.Abs(countOfDays));
+            else if (countOfDays==0) Console.WriteLine("События {1} и {0} произошли в один день.",dateFirst,dateSecond);
         }
 
     }
