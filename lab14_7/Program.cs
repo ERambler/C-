@@ -27,22 +27,5 @@ namespace lab14_6
             Console.WriteLine("\nThe Rezult is {0}\n",dateComparison(date));
 
         }
-        static bool dateComparison(string date)
-        {
-            //разделим даты на две строки через split и #
-             string[] dates=date.Split(new char[] {'#'});
-            //сравним строки через Compare и тут же вернём значение,
-            //как, вероятно, подразумевается техзаданием
-            // Console.WriteLine(dates[0]+"\n");
-            if (dates[0].CompareTo(dates[1])==0) return true; else return false;
-            //Хотелось бы, в случае различия дат, ещё и разницу подсчитать, 
-            //однако, это другая совсем уж история. 
-        }
-        static bool isDate(string date)
-        {   //Определим, является ли строка Датой.
-            //Желательно предусмотреть разные разделители, а не только "."
-            //Консервированный шаблон, ибо негоже обращаться с датами как попало ;-)
-            return true;
-        }
     }
 }

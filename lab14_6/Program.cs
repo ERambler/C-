@@ -71,6 +71,7 @@ namespace lab14_6
             if (countOfDays>0) Console.WriteLine("Событие {1} произошло позднее {0} на {2} дней.",dateFirst,dateSecond,Math.Abs(countOfDays));
             else if (countOfDays<0) Console.WriteLine("Событие {1} произошло раньше {0} на {2} дней.",dateFirst,dateSecond,Math.Abs(countOfDays));
             else if (countOfDays==0) Console.WriteLine("События {1} и {0} произошли в один день.",dateFirst,dateSecond);
+            Console.Read();
         }
 
     }
