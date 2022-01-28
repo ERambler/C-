@@ -1,0 +1,13 @@
+/home/erambler/Projects/Labs/C#_experiments/ScanCodes/bin/Debug/netcoreapp3.1/ScanCodes
+/home/erambler/Projects/Labs/C#_experiments/ScanCodes/bin/Debug/netcoreapp3.1/ScanCodes.deps.json
+/home/erambler/Projects/Labs/C#_experiments/ScanCodes/bin/Debug/netcoreapp3.1/ScanCodes.runtimeconfig.json
+/home/erambler/Projects/Labs/C#_experiments/ScanCodes/bin/Debug/netcoreapp3.1/ScanCodes.runtimeconfig.dev.json
+/home/erambler/Projects/Labs/C#_experiments/ScanCodes/bin/Debug/netcoreapp3.1/ScanCodes.dll
+/home/erambler/Projects/Labs/C#_experiments/ScanCodes/bin/Debug/netcoreapp3.1/ScanCodes.pdb
+/home/erambler/Projects/Labs/C#_experiments/ScanCodes/obj/Debug/netcoreapp3.1/ScanCodes.csprojAssemblyReference.cache
+/home/erambler/Projects/Labs/C#_experiments/ScanCodes/obj/Debug/netcoreapp3.1/ScanCodes.AssemblyInfoInputs.cache
+/home/erambler/Projects/Labs/C#_experiments/ScanCodes/obj/Debug/netcoreapp3.1/ScanCodes.AssemblyInfo.cs
+/home/erambler/Projects/Labs/C#_experiments/ScanCodes/obj/Debug/netcoreapp3.1/ScanCodes.csproj.CoreCompileInputs.cache
+/home/erambler/Projects/Labs/C#_experiments/ScanCodes/obj/Debug/netcoreapp3.1/ScanCodes.dll
+/home/erambler/Projects/Labs/C#_experiments/ScanCodes/obj/Debug/netcoreapp3.1/ScanCodes.pdb
+/home/erambler/Projects/Labs/C#_experiments/ScanCodes/obj/Debug/netcoreapp3.1/ScanCodes.genruntimeconfig.cache
