@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/erambler/Projects/Labs/C#/2-ой семестр/lab14_6/lab14_6.csproj",
-      "projectName": "lab14_6",
-      "projectPath": "/home/erambler/Projects/Labs/C#/2-ой семестр/lab14_6/lab14_6.csproj",
+      "projectUniqueName": "/home/erambler/Projects/Labs/C#/lab14_7/lab14_7.csproj",
+      "projectName": "lab14_7",
+      "projectPath": "/home/erambler/Projects/Labs/C#/lab14_7/lab14_7.csproj",
       "packagesPath": "/home/erambler/.nuget/packages/",
-      "outputPath": "/home/erambler/Projects/Labs/C#/2-ой семестр/lab14_6/obj/",
+      "outputPath": "/home/erambler/Projects/Labs/C#/lab14_7/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/home/erambler/.nuget/NuGet/NuGet.Config"
