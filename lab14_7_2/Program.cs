@@ -19,7 +19,7 @@ namespace lab14_7_2
     class TextUserInterface
     {
         static int TableLength = 0; //В этом поле мы сохраняем длину таблицы.
-        public static int[] FieldsWidth = {10,16,25,6};
+        public static int[] FieldsWidth = {16,16,25,6};
         ///<summary>Меню параметров. Главный цикл.</summary>
         public static void Loop (ref Trips travel)
         {
@@ -63,7 +63,7 @@ namespace lab14_7_2
             string label = "Вводите поочерёдно дату начала периода, дату окончания периода.";
             Console.SetCursorPosition((Console.WindowWidth / 2) - (label.Length / 2), Console.WindowHeight-3);Console.Write(label);
             Console.CursorVisible = true;
-            Console.SetCursorPosition((Console.WindowWidth / 2) - 30, Console.WindowHeight-6);
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 36, Console.WindowHeight-6);
 
             if (DateTime.TryParse(Console.ReadLine(),out DateTime newfirstdate))
             {
@@ -123,12 +123,12 @@ namespace lab14_7_2
         private static void ShowTable (ref Trips travel, int activeIndex)
         {
             string label = string.Empty;
-            Console.SetCursorPosition((Console.WindowWidth / 2) - 30, 2);
-            Console.Write("┌"+new String('─', 10)+"┬"+new String('─', 16)+"┬"+new String('─', 25)+"┬"+new String('─', 6)+"┐");
-            Console.SetCursorPosition((Console.WindowWidth / 2) - 30, 3);
-            Console.Write($"│{"Дата",10}│{"Город",16}│{"Музей",25}│{"Цена",6}│");
-            Console.SetCursorPosition((Console.WindowWidth / 2) - 30, 4);
-            Console.Write("├"+new String('─', 10)+"┼"+new String('─', 16)+"┼"+new String('─', 25)+"┼"+new String('─', 6)+"┤");
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 36, 2);
+            Console.Write("┌"+new String('─', 16)+"┬"+new String('─', 16)+"┬"+new String('─', 25)+"┬"+new String('─', 6)+"┐");
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 36, 3);
+            Console.Write($"│{"Дата",16}│{"Город",16}│{"Музей",25}│{"Цена",6}│");
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 36, 4);
+            Console.Write("├"+new String('─', 16)+"┼"+new String('─', 16)+"┼"+new String('─', 25)+"┼"+new String('─', 6)+"┤");
 
             ConsoleColor DefaultColor = Console.BackgroundColor;
             travel.ToStringArray(out string[,] table, out decimal total);
@@ -138,22 +138,22 @@ namespace lab14_7_2
             {
                 if (table[i,1]!=string.Empty) Console.BackgroundColor = ConsoleColor.DarkRed;
                 if (i==activeIndex)  Console.BackgroundColor = ConsoleColor.DarkGray;
-                Console.SetCursorPosition((Console.WindowWidth / 2) - 30, i+5);
-                Console.Write("│{0,10}│{1,16}│{2,25}│{3,6}│",table[i,0],
+                Console.SetCursorPosition((Console.WindowWidth / 2) - 36, i+5);
+                Console.Write("│{0,16}│{1,16}│{2,25}│{3,6}│",table[i,0],
                                                              table[i,1].Substring(0,(table[i,1].Length>15) ? 16 : table[i,1].Length),
                                                              table[i,2].Substring(0,(table[i,2].Length>24) ? 25 : table[i,2].Length),
                                                              table[i,3]);
                 if (i==activeIndex || table[i,1]!=string.Empty)  Console.BackgroundColor = DefaultColor;
             }
-            Console.SetCursorPosition((Console.WindowWidth / 2) - 30, i+5);
-            Console.Write("├"+new String('─', 10)+"┴"+new String('─', 16)+"┴"+new String('─', 25)+"┴"+new String('─', 6)+"┤");
-            Console.SetCursorPosition((Console.WindowWidth / 2) - 30, i+6); 
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 36, i+5);
+            Console.Write("├"+new String('─', 16)+"┴"+new String('─', 16)+"┴"+new String('─', 25)+"┴"+new String('─', 6)+"┤");
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 36, i+6); 
 
-            Console.Write("│ИТОГО: {0,53}│",total);                   
-            Console.SetCursorPosition((Console.WindowWidth / 2) - 30, i+7);
-            Console.Write("└"+new String('─', 60)+"┘");
+            Console.Write("│ИТОГО: {0,59}│",total);                   
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 36, i+7);
+            Console.Write("└"+new String('─', 66)+"┘");
             
-            Console.SetCursorPosition((Console.WindowWidth / 2) - 30, i+8); //Добавим пустую строку, чтобы при удалении елемента 
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 36, i+8); //Добавим пустую строку, чтобы при удалении елемента 
             Console.WriteLine(new String((Char)32, Console.WindowWidth));   //избежать задваивания последней строки в таблице
 
             //Возвращаем подвал на место
@@ -180,14 +180,14 @@ namespace lab14_7_2
             Console.SetCursorPosition((Console.WindowWidth / 2) - (label.Length / 2), Console.WindowHeight-1);Console.Write(label);label=string.Empty;
             
             //Нарисуем табличку, чтобы пользователю порадовать глаза
-            Console.SetCursorPosition((Console.WindowWidth / 2) - 30, Console.WindowHeight-8);
-            Console.Write("┌"+new String('─', 10)+"┬"+new String('─', 16)+"┬"+new String('─', 25)+"┬"+new String('─', 6)+"┐");
-            Console.SetCursorPosition((Console.WindowWidth / 2) - 30, Console.WindowHeight-7);
-            Console.Write($"│{"Дата:",10}│{"Город:",16}│{"Музей:",25}│{"Цена:",6}│");
-            Console.SetCursorPosition((Console.WindowWidth / 2) - 30, Console.WindowHeight-6);
-            Console.Write("│"+new String(' ', 10)+"│"+new String(' ', 16)+"│"+new String(' ', 25)+"│"+new String(' ', 6)+"│");
-            Console.SetCursorPosition((Console.WindowWidth / 2) - 30, Console.WindowHeight-5);
-            Console.Write("└"+new String('─', 10)+"┴"+new String('─', 16)+"┴"+new String('─', 25)+"┴"+new String('─', 6)+"┘");
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 36, Console.WindowHeight-8);
+            Console.Write("┌"+new String('─', 16)+"┬"+new String('─', 16)+"┬"+new String('─', 25)+"┬"+new String('─', 6)+"┐");
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 36, Console.WindowHeight-7);
+            Console.Write($"│{"Дата:",16}│{"Город:",16}│{"Музей:",25}│{"Цена:",6}│");
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 36, Console.WindowHeight-6);
+            Console.Write("│"+new String(' ', 16)+"│"+new String(' ', 16)+"│"+new String(' ', 25)+"│"+new String(' ', 6)+"│");
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 36, Console.WindowHeight-5);
+            Console.Write("└"+new String('─', 16)+"┴"+new String('─', 16)+"┴"+new String('─', 25)+"┴"+new String('─', 6)+"┘");
             Console.CursorVisible = true;
             Console.SetCursorPosition((Console.WindowWidth / 2) - 29, Console.WindowHeight-6);
             if (DateTime.TryParse(Console.ReadLine(),out DateTime newdate)) //Вводим ключ
@@ -224,13 +224,13 @@ namespace lab14_7_2
             {
                 label = "Ошибка при вводе даты! Возврат в главное меню!";
             }
-            Console.SetCursorPosition((Console.WindowWidth / 2) - 30, Console.WindowHeight-8);
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 36, Console.WindowHeight-8);
             Console.WriteLine(new String((Char)32, Console.WindowWidth));
-            Console.SetCursorPosition((Console.WindowWidth / 2) - 30, Console.WindowHeight-7);
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 36, Console.WindowHeight-7);
             Console.WriteLine(new String((Char)32, Console.WindowWidth));
-            Console.SetCursorPosition((Console.WindowWidth / 2) - 30, Console.WindowHeight-6);
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 36, Console.WindowHeight-6);
             Console.WriteLine(new String((Char)32, Console.WindowWidth));
-            Console.SetCursorPosition((Console.WindowWidth / 2) - 30, Console.WindowHeight-5);
+            Console.SetCursorPosition((Console.WindowWidth / 2) - 36, Console.WindowHeight-5);
             Console.WriteLine(new String((Char)32, Console.WindowWidth));
             Console.SetCursorPosition((Console.WindowWidth / 2) - (label.Length / 2), Console.WindowHeight-6);Console.Write(label);
 
@@ -308,7 +308,7 @@ namespace lab14_7_2
 
             for (int i=0; i<visited.Length;i++)
             {
-                array[i,0]=visited[i].ToString("dd.MM.yyy");
+                array[i,0]=visited[i].ToString("dd.MM.yyyy HH:mm");
                 if (Cities.TryGetValue(visited[i],out string place)) 
                 {
                     array[i,1]=place;
