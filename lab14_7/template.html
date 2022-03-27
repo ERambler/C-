@@ -5,22 +5,118 @@
    <title>Крошечный документ HTML5</title>
 </head>
 <body>
-   <p>Дадим встряску браузеру в стиле HTML5!</p>
-   <p>Новый магазин откроется <time>2013-03-21</time></p>
+<style>
+   .tab {
+    overflow: hidden;
+    border: 1px solid #4CAF50;
+    background-color: #C8E6C9;
+}
 
 
-   <form id='t'></form>
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
 
-       <label>Название города: </label>
-       <input name='name' form='t' value='Родной город'>
-       <label>Дата заезда: </label>
-       <input name='dat' form='t' type='date' min='2000-01-01' max='2100-01-01' value='2022-01-01'>
-       <input type='submit' form='t' value='Добавить'><br>
 
-       <form id='data'></form>
-       <p><input placeholder='Ваше имя' name='user' form='data'></p>
-       <p><input type='submit' value='Отправить форму' form='data'></p>
+.tab button:hover {
+    background-color: #FFEB3B;
+}
 
-<p></p>
+
+.tab button.active {
+    background-color: #4CAF50;
+  color: #fff;
+}
+
+
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #4CAF50;
+    border-top: none;
+}
+</style>
+
+
+
+ <script>
+   function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+
+      tabcontent = document.getElementsByClassName('tabcontent');
+      for (i = 0; i < tabcontent.length; i++) {
+         tabcontent[i].style.display = 'none';
+      }
+
+      tablinks = document.getElementsByClassName('tablinks');
+      for (i = 0; i < tablinks.length; i++) {
+         tablinks[i].className = tablinks[i].className.replace(' active', '');
+      }
+
+      document.getElementById(cityName).style.display = 'block';
+      evt.currentTarget.className += ' active';
+   }
+</script>
+
+<div class='tab'>
+   <button class='tablinks' onclick="openCity(event, 'Главная')">Вывод информации</button>
+   <button class='tablinks' onclick="openCity(event, 'ДобавитьЗ')">Добавить заезд</button>
+   <button class='tablinks' onclick="openCity(event, 'Добавить')">Добавить посещение</button>
+   <button class='tablinks' onclick="openCity(event, 'Удалить')">Удалить запись</button>
+   <button class='tablinks' onclick="openCity(event, 'Выход')">Выход</button>
+  
+</div>
+<div id='Главная' class='tabcontent'>
+   <h3>Москва</h3>
+   <p>Москва это столица России.</p>
+ </div>
+ <div id='ДобавитьЗ' class='tabcontent'>
+   <form method='get' id='town' action='town'>
+      <fieldset>
+      <legend>Добавить заезд</legend>
+          <label for='name'>Название города: </label>
+          <input name='name' value='Родной город'>
+          <label for='dat'>Дата заезда: </label>
+          <input name='dat' type='date' min='2000-01-01' max='2100-01-01' value='2022-01-01'>
+          <input type='submit' value='Добавить'><br>
+      </fieldset>
+  </form>  
+   </div>
+ <div id='Добавить' class='tabcontent'>
+   <form method='get'id='museum' action='museum'>
+      <fieldset>
+      <legend>Добавить посещение музея</legend>
+          <label for='name'>Название музея:</label>
+          <input name='name' value='Родной город'>
+          <label for='price'>Цена</label>
+          <input name='price' type='number' value='0' min='0' step='0.01'>
+          <label for='dat'>Дата посещения: </label>
+          <input name='dat' type='date' min='2000-01-01' max='2100-01-01' value='2022-01-01'>
+          <input type='submit' value='Добавить'><br>
+      </fieldset>        
+  </form>
+ </div>
+ <div id='Удалить' class='tabcontent'>
+   <form method='get' id='remove' action='remove'>
+      <fieldset>
+      <legend>Удаление</legend>
+          <input type='submit' value='Удаление'><br>
+      </fieldset>        
+  </form>
+ </div>
+ <div id='Выход' class='tabcontent'>
+   <form action='exit' id='exit'>
+      <fieldset>
+      <legend>Выход</legend>
+          <input type='submit' value='Выход'><br>
+      </fieldset>        
+  </form>
+ </div>
 </body>
 </html>

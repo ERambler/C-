@@ -28,10 +28,10 @@ namespace lab14_6
 
         static HttpListener listener = new HttpListener();
 
-        public static void SimpleListener() //Прослушивание и разбор запроса от браузера
+        public static void SimpleListener() //Прослушиваем запрос от браузера на указанный локальный порт 
         {               
-            // Внимание. Метод GetContext будет останавливать выполнение кода, пока не придёт запрос.
-            HttpListenerContext context = listener.GetContext();
+            // !ОСТОРОЖНО! Метод GetContext будет останавливать выполнение кода, пока не придёт запрос.
+            HttpListenerContext context = listener.GetContext(); // И вот пришёл запрос
             HttpListenerRequest request = context.Request;
             // Обрабатываю запрос.
                     string lastPart = "";
@@ -59,15 +59,15 @@ namespace lab14_6
                     }*/
             // Формирую ответ.
             HttpListenerResponse response = context.Response;
-            string responseString = MakeHTML(); responseString=responseString.Replace("'","\"");
-            byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString); //Считет число байт строки в нужной кодировке
+            string responseString = MakeHTML();// responseString=responseString.Replace("'","\"");
+            byte[] buffer = System.Text.Encoding.UTF8.GetBytes(responseString); //Считаем число байт строки в нужной кодировке
             response.ContentLength64 = buffer.Length;
             System.IO.Stream output = response.OutputStream;
             output.Write(buffer,0,buffer.Length);
-            output.Close();//Закрываю поток вывода
+            output.Close();//Закрываем поток вывода
               
         }
-        static void OpenUrl(string url) //Нужно для открытия браузера на разных платформах.
+        static void OpenUrl(string url) //Обеспечиваем кроссплатформенность запуска браузера по-умолчанию
             {
                 try
                 {Process.Start(url);}
@@ -81,7 +81,7 @@ namespace lab14_6
                     else if (RuntimeInformation.IsOSPlatform(OSPlatform.OSX))
                     {Process.Start("open", url);}
                     else
-                    {throw;}
+                    {throw;} //А если платформа будет не Win/iOS/nix?
                 }
             }
         static void Main(string[] args)
@@ -98,11 +98,11 @@ namespace lab14_6
             pays.Add(DateTime.Parse("5/3/2009",System.Globalization.CultureInfo.InvariantCulture),275);
             pays.Add(DateTime.Parse("5/5/2009",System.Globalization.CultureInfo.InvariantCulture),600);
 
-            listener.Prefixes.Add("http://*:65532/");   // Добавляю прослушываемые префиксы запросов
-            listener.Start();                           //Слушаю согласно префиксам
+            listener.Prefixes.Add("http://*:65532/");   //Добавляем прослушываемые префиксы запросов
+            listener.Start();                           //Слушаем согласно префиксам
             OpenUrl("http://localhost:65532/");    
-            while (working) SimpleListener();           //Итерирую прослушивание пока не придёт working false
-            listener.Stop();                            //Останавливаю прослушивание.
+            while (working) SimpleListener();           //Итерируем прослушивание пока не придёт working false
+            listener.Stop();                            //Останавливаем прослушивание.
 
         }
         static string MakeHTML ()                       //Формирование string для страницы. Тут же и обработка словарей и прочие вычисления. Метод нарушает хороший тон, но тут так будет удобнее.
@@ -155,45 +155,103 @@ namespace lab14_6
         <html> 
             <head> <meta charset='utf-8'>  <title>Программа: Музейный турист</title></head>
             <body>
+            <style>
+            .tab {
+                overflow: hidden;
+                border: 1px solid #4CAF50;
+                background-color: #C8E6C9;
+            }
+            .tab button {
+                background-color: inherit;
+                float: left;
+                border: none;
+                outline: none;
+                cursor: pointer;
+                padding: 14px 16px;
+                transition: 0.3s;
+            }
+            .tab button:hover {
+                background-color: #FFEB3B;
+            }
+            .tab button.active {
+                background-color: #4CAF50;
+            color: #fff;
+            }
+            .tabcontent {
+                display: none;
+                padding: 6px 12px;
+                border: 1px solid #4CAF50;
+                border-top: none;
+            }
+            </style>
+            <script>
+            function show (evt, cityName) {
+                var i, tabcontent, tablinks;
+
+                tabcontent = document.getElementsByClassName('tabcontent');
+                for (i = 0; i < tabcontent.length; i++) {
+                    tabcontent[i].style.display = 'none';
+                }
+                tablinks = document.getElementsByClassName('tablinks');
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(' active', '');
+                }
+                document.getElementById(cityName).style.display = 'block';
+                evt.currentTarget.className += ' active';
+            }
+            function closeWindow()   
+            { 
+                var xmlHttp = new XMLHttpRequest();
+
+                xmlHttp.open(""GET"", ""exit"", false); // true for asynchronous 
+                xmlHttp.send(null);
+                window.close();
+
+            }
+            </script>
+                <div class='tab'>
+                    <button class='tablinks' onclick=""show(event, 'Главная')"">Вывод информации</button>
+                    <button class='tablinks' onclick=""show(event, 'ДобавитьЗ')"">Добавить заезд</button>
+                    <button class='tablinks' onclick=""show(event, 'Добавить')"">Добавить посещение</button>
+                    <button class='tablinks' onclick=""show(event, 'Удалить')"">Удалить запись</button>
+                    <button class='tablinks' onclick=""closeWindow()"">Выход</button>
+                </div>
+            <div id='Главная' class='tabcontent'>
             <table><tr><th>Дата</th><th>Музей</th><th>Цена</th></tr>";
         static string END = @"
-        <form method='get' id='town' action='town'>
-            <fieldset>
-            <legend>Добавить заезд</legend>
-                <label for='name'>Название города: </label>
-                <input name='name' value='Родной город'>
-                <label for='dat'>Дата заезда: </label>
-                <input name='dat' type='date' min='2000-01-01' max='2100-01-01' value='2022-01-01'>
-                <input type='submit' value='Добавить'><br>
-            </fieldset>
-        </form>    
-        
-        <form method='get'id='museum' action='museum'>
-            <fieldset>
-            <legend>Добавить посещение музея</legend>
-                <label for='name'>Название музея:</label>
-                <input name='name' value='Родной город'>
-                <label for='price'>Цена</label>
-                <input name='price' type='number' value='0' min='0' step='0.01'>
-                <label for='dat'>Дата посещения: </label>
-                <input name='dat' type='date' min='2000-01-01' max='2100-01-01' value='2022-01-01'>
-                <input type='submit' value='Добавить'><br>
-            </fieldset>        
-        </form>
-        <form method='get' id='remove' action='remove'>
-            <fieldset>
-            <legend>Удаление</legend>
-                <input type='submit' value='Удаление'><br>
-            </fieldset>        
-        </form>
-        <form action='exit' id='exit'>
-            <fieldset>
-            <legend>Выход</legend>
-                <input type='submit' value='Выход'><br>
-            </fieldset>        
-        </form>
-        <p></p>
-        </body>
-        </html>"; 
+            </div>
+            <div id='ДобавитьЗ' class='tabcontent'>
+            <form method='get' id='town' action='town'>
+                    <br>
+                    <label for='name'>Название города: </label>
+                    <input name='name' value='Родной город'><br>
+                    <label for='dat'>Дата заезда: </label>
+                    <input name='dat' type='date' min='2000-01-01' max='2100-01-01' value='2022-01-01'><br>
+                    <input type='submit' value='Добавить'><br>
+
+            </form>  
+            </div>
+            <div id='Добавить' class='tabcontent'>
+            <form method='get'id='museum' action='museum'>
+                    <br>
+                    <label for='name'>Название музея:</label>
+                    <input name='name' value='Родной город'><br>
+                    <label for='price'>Цена</label>
+                    <input name='price' type='number' value='0' min='0' step='1'><br>
+                    <label for='dat'>Дата посещения: </label>
+                    <input name='dat' type='date' min='2000-01-01' max='2100-01-01' value='2022-01-01'><br>
+                    <input type='submit' value='Добавить'><br>
+    
+            </form>
+            </div>
+            <div id='Удалить' class='tabcontent'>
+            <form method='get' id='remove' action='remove'>
+                    <br>
+                    <input type='submit' value='Удаление'><br>
+ 
+            </form>
+            </div>
+            </body>
+            </html>"; 
     }
 }

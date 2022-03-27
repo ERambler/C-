@@ -1,0 +1,15 @@
+/home/erambler/Projects/Labs/C#/lab14_7_2/bin/Debug/net6.0/lab14_7_2
+/home/erambler/Projects/Labs/C#/lab14_7_2/bin/Debug/net6.0/lab14_7_2.deps.json
+/home/erambler/Projects/Labs/C#/lab14_7_2/bin/Debug/net6.0/lab14_7_2.runtimeconfig.json
+/home/erambler/Projects/Labs/C#/lab14_7_2/bin/Debug/net6.0/lab14_7_2.dll
+/home/erambler/Projects/Labs/C#/lab14_7_2/bin/Debug/net6.0/lab14_7_2.pdb
+/home/erambler/Projects/Labs/C#/lab14_7_2/obj/Debug/net6.0/lab14_7_2.csproj.AssemblyReference.cache
+/home/erambler/Projects/Labs/C#/lab14_7_2/obj/Debug/net6.0/lab14_7_2.GeneratedMSBuildEditorConfig.editorconfig
+/home/erambler/Projects/Labs/C#/lab14_7_2/obj/Debug/net6.0/lab14_7_2.AssemblyInfoInputs.cache
+/home/erambler/Projects/Labs/C#/lab14_7_2/obj/Debug/net6.0/lab14_7_2.AssemblyInfo.cs
+/home/erambler/Projects/Labs/C#/lab14_7_2/obj/Debug/net6.0/lab14_7_2.csproj.CoreCompileInputs.cache
+/home/erambler/Projects/Labs/C#/lab14_7_2/obj/Debug/net6.0/lab14_7_2.dll
+/home/erambler/Projects/Labs/C#/lab14_7_2/obj/Debug/net6.0/refint/lab14_7_2.dll
+/home/erambler/Projects/Labs/C#/lab14_7_2/obj/Debug/net6.0/lab14_7_2.pdb
+/home/erambler/Projects/Labs/C#/lab14_7_2/obj/Debug/net6.0/lab14_7_2.genruntimeconfig.cache
+/home/erambler/Projects/Labs/C#/lab14_7_2/obj/Debug/net6.0/ref/lab14_7_2.dll
