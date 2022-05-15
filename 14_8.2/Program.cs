@@ -1,4 +1,7 @@
 ﻿/*
+Вариант 14.
+Задача 8.2
+
 Необходимо выполнить следующие операции со структурами:
 1) описать структуру согласно варианту (табл. 2);
 2) объявить переменную структурного типа;
@@ -77,7 +80,7 @@ static class Program
         Console.Write (printString);
         try
         {
-            inputValue = float.Parse (Console.ReadLine());
+            inputValue = float.Parse (Console.ReadLine() ?? string.Empty);
         }
         catch (FormatException)
         {
@@ -97,7 +100,7 @@ static class Program
         input (out float f, "Скорость перемещения груза: ");
         Crane crane = new Crane(Name,a,b,c,d,e,f);
 
-        Console.Clear();
+        //Console.Clear();
 
         crane.PrintStruct();
 

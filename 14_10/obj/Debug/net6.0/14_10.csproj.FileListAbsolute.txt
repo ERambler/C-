@@ -13,3 +13,8 @@
 /home/erambler/Projects/Labs/C#/14_10/obj/Debug/net6.0/14_10.pdb
 /home/erambler/Projects/Labs/C#/14_10/obj/Debug/net6.0/14_10.genruntimeconfig.cache
 /home/erambler/Projects/Labs/C#/14_10/obj/Debug/net6.0/ref/14_10.dll
+/home/erambler/Projects/Labs/C#/14_10/pub/14_10
+/home/erambler/Projects/Labs/C#/14_10/pub/14_10.deps.json
+/home/erambler/Projects/Labs/C#/14_10/pub/14_10.runtimeconfig.json
+/home/erambler/Projects/Labs/C#/14_10/pub/14_10.dll
+/home/erambler/Projects/Labs/C#/14_10/pub/14_10.pdb

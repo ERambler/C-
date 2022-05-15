@@ -1,21 +1,18 @@
 ﻿/*
-Вариант 14 Журавлёв
+Вариант 14
+Задача 7
+
 Человек путешествует по городам и посещает музеи. Человек от-
 мечает посещенные города, музеи и время посещения. Программа
 по указанию временного интервала распечатывает посещенные
 города и музеи с возможностью получения оплаченной стоимо-
 сти и длительности посещения.*/
 
-using System;
-using System.Threading;
-using System.Linq;
-using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
-using System.Collections.Generic;
 
 namespace lab14_7_2
 {
-    ///<summary>Текстовой пользовательский интерфейс</summary>
+    ///<summary>Текстовый пользовательский интерфейс</summary>
     class TextUserInterface
     {
         static int TableLength = 0; //В этом поле мы сохраняем длину таблицы.
@@ -193,11 +190,11 @@ namespace lab14_7_2
             if (DateTime.TryParse(Console.ReadLine(),out DateTime newdate)) //Вводим ключ
             {
                 Console.SetCursorPosition((Console.WindowWidth / 2) - 18, Console.WindowHeight-6);
-                string newcity = Console.ReadLine(); //Значение может оказаться пустым
-                if (newcity==string.Empty)           //В коде мы будем использовать это
-                {                                    //Для управления.
+                string newcity = Console.ReadLine() ?? string.Empty; //Значение может оказаться пустым
+                if (newcity==string.Empty)                           //В коде мы будем использовать это
+                {                                                    //Для управления.
                     Console.SetCursorPosition((Console.WindowWidth / 2) - 1, Console.WindowHeight-6); //Не забываем указывать позицию курсора
-                    string newmuseum = Console.ReadLine();
+                    string newmuseum = Console.ReadLine() ?? string.Empty;
                     if (newmuseum!=string.Empty)
                     {
                         Console.SetCursorPosition((Console.WindowWidth / 2) + 25, Console.WindowHeight-6);
@@ -309,7 +306,7 @@ namespace lab14_7_2
             for (int i=0; i<visited.Length;i++)
             {
                 array[i,0]=visited[i].ToString("dd.MM.yyyy HH:mm");
-                if (Cities.TryGetValue(visited[i],out string place)) 
+                if (Cities.TryGetValue(visited[i],out string? place)) 
                 {
                     array[i,1]=place;
                     array[i,2] = string.Empty;          //Пустое значение явно укажем, оно позднее будет использоваться для подсветки строк с промежуточным итогом
@@ -329,7 +326,6 @@ namespace lab14_7_2
             array[lastcity,3]=sum.ToString();
             strings_array = array;
             total = totalsum;
-            //return array;
         }       
     }
     class Program

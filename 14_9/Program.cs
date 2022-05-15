@@ -56,18 +56,18 @@ class Program
     {
         float result; 
         Console.Clear();
-        Console.Write ("Скорость соединения: ");
+        Console.Write ("Скорость соединения (Кбит/с): ");
         long connectionSpeed = long.Parse (Console.ReadLine());
-        Console.Write ("Размер файла в байтах: ");
+        Console.Write ("Размер файла (байт): ");
         long fileSize = long.Parse (Console.ReadLine());
 
 
 
         result = ReceiveTime(connectionSpeed,fileSize);
-        Console.WriteLine ($" Время передачи с учётом потерь составит: {result} сек. ");
+        Console.WriteLine ($"возвращение результата через имя метода:\n\tВремя передачи с учётом потерь составит {result} сек. ");
 
 
         ReceiveTime(connectionSpeed,fileSize, out result);
-        Console.WriteLine ($" Время передачи с учётом потерь составит: {result} сек.");
+        Console.WriteLine ($"Возвращение результата через параметры:\n\tВремя передачи с учётом потерь составит {result} сек.");
     }
 }

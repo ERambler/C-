@@ -1,4 +1,14 @@
-﻿static class Program
+﻿/*
+Вариант 14.
+Задача 8.1
+
+Необходимо выполнить следующие операции с перечислениями:
+1) описать перечисление согласно варианту (табл. 1);
+2) объявить переменную перечисляемого типа данных;
+3) инициализировать переменную значением с клавиатуры;
+4) вывести все значения перечисляемого типа данных на экран
+при этом введенное с клавиатуры значение подсветить другим цветом.*/
+static class Program
 {
     private enum Geners
     {
@@ -39,7 +49,7 @@
 
         try
         {
-            gen = (Geners) int.Parse (Console.ReadLine());
+            gen = (Geners) int.Parse (Console.ReadLine() ?? string.Empty);
             if ((int) gen < 0 || (int) gen > Enum.GetValues(typeof(Geners)).Length) throw  new IndexOutOfRangeException();
         }
         catch (IndexOutOfRangeException)
